@@ -1,129 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Karthik Kumar's Travels</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
-        <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"/>
-        <link rel="stylesheet" type="text/css" href="../assets/css/theme.css">
-        <script>
-            window['_fs_debug'] = false;
-            window['_fs_host'] = 'fullstory.com';
-            window['_fs_org'] = 'HG6QB';
-            window['_fs_namespace'] = 'FS';
-            (function(m,n,e,t,l,o,g,y){
-                if (e in m) {if(m.console && m.console.log) { m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].');} return;}
-                g=m[e]=function(a,b,s){g.q?g.q.push([a,b,s]):g._api(a,b,s);};g.q=[];
-                o=n.createElement(t);o.async=1;o.src='https://'+_fs_host+'/s/fs.js';
-                y=n.getElementsByTagName(t)[0];y.parentNode.insertBefore(o,y);
-                g.identify=function(i,v,s){g(l,{uid:i},s);if(v)g(l,v,s)};g.setUserVars=function(v,s){g(l,v,s)};g.event=function(i,v,s){g('event',{n:i,p:v},s)};
-                g.shutdown=function(){g("rec",!1)};g.restart=function(){g("rec",!0)};
-                g.consent=function(a){g("consent",!arguments.length||a)};
-                g.identifyAccount=function(i,v){o='account';v=v||{};v.acctId=i;g(o,v)};
-                g.clearUserCookie=function(){};
-            })(window,document,window['_fs_namespace'],'script','user');
-            </script>
-    </head>
-    <body class="bg-washed-yellow">
-        <header class="w-100 pa1 ph5-ns">
-            <nav class="dt w-100 mw8 center"> 
-                    <div class="dtc w5 v-mid pa3">
-                        <a href="/" class="hover-silver f4 dib w5 h1 no-underline black-70">Karthik Kumar</a>
-                    </div>
-                    <div class="dtc v-mid tr pa3">
-                    <a class="f4 fw4 hover-silver no-underline black-70 dn dib-ns pv2 ph3" href="/posts/" >Posts</a> 
-                    <a class="f4 fw4 hover-silver no-underline black-70 dn dib-ns pv2 ph3" href="/projects/" >Projects</a> 
-                    <a class="f4 fw4 hover-silver no-underline black-70 dn dib-l pv2 ph3" href="/photos/" >Photography</a> 
-                    <a class="f4 fw4 hover-silver no-underline black-70 dn dib-l pv2 ph3" href="/travel/" >Travel</a> 
-                    <a class="f4 fw4 hover-silver no-underline black-70 dib dib-l pv2 ph3" href="/about/" >About</a> 
-                    </div>
-            </nav> 
-        </header>
+<head>
+    <title>Karthik Kumar's Travels</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <main class="w-100 h-100 bt b--black-40">
-            <div class="ph2 w-100 h-100 ph3 ph5-ns pv4">
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
-                <script src="../assets/js/datamaps.world.min.js"></script>
-                <div class="mw8 center pa3">
-                    <p class="maintext mt0">Travel</p>
-                    <p class="subtext">I am an admittedly novice traveler. I have lived in two countries have visited seven. My plan is to someday write a blog or two about my travels (if only as a way to capture my memories for my future-self). The next countries I hope to visit are (in no particular order): Spain, Peru, Australia and Indonesia.</p>
-                </div>
-                <hr class="mw8">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/theme.css">
+    <script>
+        window['_fs_debug'] = false;
+        window['_fs_host'] = 'fullstory.com';
+        window['_fs_org'] = 'HG6QB';
+        window['_fs_namespace'] = 'FS';
+        (function (m, n, e, t, l, o, g, y) {
+            if (e in m) { if (m.console && m.console.log) { m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].'); } return; }
+            g = m[e] = function (a, b, s) { g.q ? g.q.push([a, b, s]) : g._api(a, b, s); }; g.q = [];
+            o = n.createElement(t); o.async = 1; o.src = 'https://' + _fs_host + '/s/fs.js';
+            y = n.getElementsByTagName(t)[0]; y.parentNode.insertBefore(o, y);
+            g.identify = function (i, v, s) { g(l, { uid: i }, s); if (v) g(l, v, s) }; g.setUserVars = function (v, s) { g(l, v, s) }; g.event = function (i, v, s) { g('event', { n: i, p: v }, s) };
+            g.shutdown = function () { g("rec", !1) }; g.restart = function () { g("rec", !0) };
+            g.consent = function (a) { g("consent", !arguments.length || a) };
+            g.identifyAccount = function (i, v) { o = 'account'; v = v || {}; v.acctId = i; g(o, v) };
+            g.clearUserCookie = function () { };
+        })(window, document, window['_fs_namespace'], 'script', 'user');
+    </script>
+</head>
 
-                <div id="map" class="mw8 center pt0"></div>
-                <script>
-                    var map = new Datamap({
-                        scope: 'world',
-                        element: document.getElementById('map'),
-                        responsive: true,
-                        projection: 'mercator',
-                        fills: {
-                            defaultFill: '#ebeeff',
-                            "Lived": 'rgba(71, 159, 130, 0.9)',
-                            "Visited": 'rgba(219, 98, 126 ,0.9)',
-                        },
-                        geographyConfig: {
-                            borderColor: '#EFFDF9',
-                            highlightFillColor: '88D05D',
-                            highlightBorderColor: 'rgba(185, 243, 151, 0.2)',
-                            popupTemplate: function(geo, data) {
-                                if (data) {
-                                    return ['<div class="hoverinfo"><span class="b f5">',
-                                            geo.properties.name,
-                                            '</span><br/>'].join('');
-                                } else {
-                                    return ['<div class="hoverinfo">',
-                                            '<span class="b f5">',
-                                            geo.properties.name,
-                                            '</span></div>'].join('');
-                                }
-                            }
-                        },
-                        data: {
-                            USA: {
-                                fillKey: 'Lived',
-                            },
-                            CAN: {
-                                fillKey: 'Visited'
-                            },
-                            FRA: {
-                                fillKey: 'Visited',
-                            },
-                            GBR: {
-                                fillKey: 'Visited',
-                            },
-                            IND: {
-                                fillKey: 'Lived',
-                            },
-                            THA: {
-                                fillKey: 'Visited',
-                            },
-                            ITA: {
-                                fillKey: 'Visited',
-                            },
-                            CHE: {
-                                fillKey: 'Visited',
-                            },
-                            BHS: {
-                                fillKey: 'Visited',
+<body class="bg-washed-yellow">
+    <header class="w-100 pa1 ph5-ns">
+        <nav class="dt w-100 mw8 center">
+            <div class="dtc w5 v-mid pa3">
+                <a href="/" class="hover-silver f4 dib w5 h1 no-underline black-70">Karthik Kumar</a>
+            </div>
+            <div class="dtc v-mid tr pa3">
+                <a class="f4 fw4 hover-silver no-underline black-70 dn dib-ns pv2 ph3" href="/posts/">Posts</a>
+                <a class="f4 fw4 hover-silver no-underline black-70 dn dib-ns pv2 ph3" href="/projects/">Projects</a>
+                <a class="f4 fw4 hover-silver no-underline black-70 dn dib-l pv2 ph3" href="/photos/">Photography</a>
+                <a class="f4 fw4 hover-silver no-underline black-70 dn dib-l pv2 ph3" href="/travel/">Travel</a>
+                <a class="f4 fw4 hover-silver no-underline black-70 dib dib-l pv2 ph3" href="/about/">About</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="w-100 h-100 bt b--black-40">
+        <div class="ph2 w-100 h-100 ph3 ph5-ns pv4">
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
+            <script src="../assets/js/datamaps.world.min.js"></script>
+            <div class="mw8 center pa3">
+                <p class="maintext mt0">Travel</p>
+                <p class="subtext">I am an admittedly novice traveler. I have lived in two countries have visited
+                    seven. My plan is to someday write a blog or two about my travels (if only as a way to capture my
+                    memories for my future-self). The next countries I hope to visit are (in no particular order):
+                    Spain, Peru, Australia and Indonesia.</p>
+            </div>
+            <hr class="mw8">
+
+            <div id="map" class="mw8 center pt0"></div>
+            <script>
+                var map = new Datamap({
+                    scope: 'world',
+                    element: document.getElementById('map'),
+                    responsive: true,
+                    projection: 'mercator',
+                    fills: {
+                        defaultFill: '#ebeeff',
+                        "Lived": 'rgba(71, 159, 130, 0.9)',
+                        "Visited": 'rgba(219, 98, 126 ,0.9)',
+                    },
+                    geographyConfig: {
+                        borderColor: '#EFFDF9',
+                        highlightFillColor: '88D05D',
+                        highlightBorderColor: 'rgba(185, 243, 151, 0.2)',
+                        popupTemplate: function (geo, data) {
+                            if (data) {
+                                return ['<div class="hoverinfo"><span class="b f5">',
+                                    geo.properties.name,
+                                    '</span><br/>'].join('');
+                            } else {
+                                return ['<div class="hoverinfo">',
+                                    '<span class="b f5">',
+                                    geo.properties.name,
+                                    '</span></div>'].join('');
                             }
                         }
-                    });
-                    map.legend();
-                    window.addEventListener('resize', function() {
-                        map.resize();
-                    });
-                </script>
-            </div>
-        </main>
-    
-        <footer class="pv4 ph3 ph5-m ph6-l mid-gray">
-            <small class="f6 db tc">© 2019 <b class="ttu">Karthik Kumar</b>, All Rights Reserved</small>
-            <div class="tc mt3">
-              Made with <a href="https://tachyons.io" title="Tachyons" class="b f6 dib link mid-gray dim">Tachyons</a>, <a href="http://datamaps.github.io/" title="Datamaps" class="b f6 dib link mid-gray dim">Datamaps</a> and ❤️
-            </div>
-          </footer>
-    </body>
+                    },
+                    data: {
+                        USA: {
+                            fillKey: 'Lived',
+                        },
+                        CAN: {
+                            fillKey: 'Visited'
+                        },
+                        FRA: {
+                            fillKey: 'Visited',
+                        },
+                        GBR: {
+                            fillKey: 'Visited',
+                        },
+                        IND: {
+                            fillKey: 'Lived',
+                        },
+                        THA: {
+                            fillKey: 'Visited',
+                        },
+                        ITA: {
+                            fillKey: 'Visited',
+                        },
+                        CHE: {
+                            fillKey: 'Visited',
+                        },
+                        BHS: {
+                            fillKey: 'Visited',
+                        }
+                    }
+                });
+                map.legend();
+                window.addEventListener('resize', function () {
+                    map.resize();
+                });
+            </script>
+        </div>
+    </main>
+
+    <footer class="pv4 ph3 ph5-m ph6-l mid-gray">
+        <small class="f6 db tc">© 2019 <b class="ttu">Karthik Kumar</b>, All Rights Reserved</small>
+        <div class="tc mt3">
+            Made with <a href="https://tachyons.io" title="Tachyons" class="b f6 dib link mid-gray dim">Tachyons</a>,
+            <a href="http://datamaps.github.io/" title="Datamaps" class="b f6 dib link mid-gray dim">Datamaps</a> and
+            ❤️
+        </div>
+    </footer>
+</body>
+
 </html>
