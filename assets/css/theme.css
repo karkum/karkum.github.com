@@ -5,6 +5,10 @@ body {
     position: absolute;
 }
 
+a {
+  text-decoration: none;
+}
+
 .mobileShow {display: none;} 
 
   /* Smartphone Portrait and Landscape */ 
