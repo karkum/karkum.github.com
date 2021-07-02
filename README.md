@@ -2,4 +2,4 @@
 
 Code for personal website: http://karthikkumar.me
 
-Built with Tachyons and Datamaps
+Built with Tachyons.
