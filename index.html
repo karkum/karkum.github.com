@@ -1,73 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Karthik Kumar</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css" />
-    <link rel="stylesheet" type="text/css" href="assets/css/theme.css">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-132341198-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'UA-132341198-1');
-    </script>
-    <script>
-        window['_fs_debug'] = false;
-        window['_fs_host'] = 'fullstory.com';
-        window['_fs_org'] = 'HG6QB';
-        window['_fs_namespace'] = 'FS';
-        (function (m, n, e, t, l, o, g, y) {
-            if (e in m) { if (m.console && m.console.log) { m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].'); } return; }
-            g = m[e] = function (a, b, s) { g.q ? g.q.push([a, b, s]) : g._api(a, b, s); }; g.q = [];
-            o = n.createElement(t); o.async = 1; o.src = 'https://' + _fs_host + '/s/fs.js';
-            y = n.getElementsByTagName(t)[0]; y.parentNode.insertBefore(o, y);
-            g.identify = function (i, v, s) { g(l, { uid: i }, s); if (v) g(l, v, s) }; g.setUserVars = function (v, s) { g(l, v, s) }; g.event = function (i, v, s) { g('event', { n: i, p: v }, s) };
-            g.shutdown = function () { g("rec", !1) }; g.restart = function () { g("rec", !0) };
-            g.consent = function (a) { g("consent", !arguments.length || a) };
-            g.identifyAccount = function (i, v) { o = 'account'; v = v || {}; v.acctId = i; g(o, v) };
-            g.clearUserCookie = function () { };
-        })(window, document, window['_fs_namespace'], 'script', 'user');
-    </script>
+    <link rel="stylesheet" href="/assets/css/style.css">
 </head>
-
-<body class="bg-washed-yellow">
-    <header class="w-100 pa1 ph5-ns">
-        <nav class="dt w-100 mw8 center">
-            <div class="dtc w5 v-mid pa3">
-                <a href="/" class="hover-silver f4 dib w5 h1 no-underline black-70">Karthik Kumar</a>
-            </div>
-            <div class="dtc v-mid tr pa3">
-                <a class="f4 fw4 hover-silver no-underline black-70 dn dib-ns pv2 ph3" href="/speaking/">Speaking</a>
-                <a class="f4 fw4 hover-silver no-underline black-70 dn dib-ns pv2 ph3" href="/writing/">Writing</a>
-                <a class="f4 fw4 hover-silver no-underline black-70 dn dib-ns pv2 ph3" href="/projects/">Projects</a>
-                <a class="f4 fw4 hover-silver no-underline black-70 dn dib-l pv2 ph3" href="/photos/">Photography</a>
-                <a class="f4 fw4 hover-silver no-underline black-70 dib dib-l pv2 ph3" href="/about/">About</a>
-            </div>
-        </nav>
+<body>
+    <header>
+        <div class="container">
+            <nav></nav>
+        </div>
     </header>
 
-    <main class="w-100 bt b--black-40">
-        <div class="tc-l mt4 mt5-m mt6-l ph3">
-            <img src="assets/img/avatar.png" title="What I look like">
-            <p class="maintext">Hello, thank you for visiting my corner of the Internet!</p>
-            <p class="subtext">This website is an index of links to other areas
-                of the Internet that I occupy. Take a look around and get in touch!</p>
+    <main>
+        <div class="container">
+            <section class="hero">
+                <img src="/assets/img/avatar.png" alt="Karthik Kumar" class="hero-image">
+                <h1>Building Reliable Systems at Scale</h1>
+                <p><strong>Product-minded Software Engineer</strong> specializing in <strong>Observability</strong> and <strong>Developer Productivity</strong>. I'm passionate about the performance and reliability of <strong>Distributed Systems</strong>. I have over <strong>14 years of experience</strong> leading complex projects and reliably delivering results.</p>
+            </section>
+
+            <section class="content-section">
+                <p style="font-size: 1.1rem; line-height: 1.8;">I'm passionate about improving <strong>developer productivity</strong> through better tooling and observability. Currently, I'm exploring how principles from debugging Distributed Systems can be applied to <strong>AI agents and systems</strong>—bringing <strong>production-level reliability practices</strong> to emerging AI infrastructure.</p>
+
+                <p style="font-size: 1.1rem; line-height: 1.8;">I'm currently at <strong><a href="https://netflix.com">Netflix</a></strong> building <strong>Distributed Tracing infrastructure</strong>, helping engineers understand and debug complex systems. I've had stints at <a href="https://lightstep.com">Lightstep</a>, <a href="https://www.rallyhealth.com/">Rally Health</a>, <a href="https://www.opower.com">Opower</a>, <a href="https://www.qualcomm.com">Qualcomm</a>, and <a href="https://www.ibm.com">IBM</a> in the past. I hold Master's/Bachelor's degrees in Computer Science from <strong>Georgia Tech</strong>/<strong>Virginia Tech</strong>.</p>
+
+                <h2 style="font-size: 1.5rem; margin-top: var(--spacing-lg); margin-bottom: var(--spacing-md);">Core Expertise</h2>
+                <ul style="font-size: 1.1rem; line-height: 1.8; margin-left: 2rem; color: var(--color-text-light); list-style: none;">
+                    <li style="margin-bottom: var(--spacing-sm);"><strong>Distributed Tracing and Observability Infrastructure</strong></li>
+                    <li style="margin-bottom: var(--spacing-sm);"><strong>System reliability and performance optimization</strong></li>
+                    <li style="margin-bottom: var(--spacing-sm);"><strong>Design and implementation of Distributed Systems</strong></li>
+                </ul>
+
+                <h2 style="font-size: 1.5rem; margin-top: var(--spacing-lg); margin-bottom: var(--spacing-md);">Values</h2>
+                <ul style="font-size: 1.1rem; line-height: 1.8; margin-left: 2rem; color: var(--color-text-light); list-style: none;">
+                    <li style="margin-bottom: var(--spacing-sm);"><strong>Communicate with clarity and transparency</strong> - <em>Structure ideas simply, share context openly, and ensure understanding across teams and people</em></li>
+                    <li style="margin-bottom: var(--spacing-sm);"><strong>Embrace challenges to grow</strong> - <em>Seek complex problems that stretch my capabilities and accelerate learning</em></li>
+                    <li style="margin-bottom: var(--spacing-sm);"><strong>Build trust through action</strong> - <em>Demonstrate accountability, show empathy, and bring passion to my work</em></li>
+                </ul>
+
+            </section>
+
+            <section class="social-links">
+                <a href="https://github.com/karkum" class="social-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                        <path d="M8 0C3.58 0 0 3.582 0 8c0 3.535 2.292 6.533 5.47 7.59.4.075.547-.172.547-.385 0-.19-.007-.693-.01-1.36-2.226.483-2.695-1.073-2.695-1.073-.364-.924-.89-1.17-.89-1.17-.725-.496.056-.486.056-.486.803.056 1.225.824 1.225.824.714 1.223 1.873.87 2.33.665.072-.517.278-.87.507-1.07-1.777-.2-3.644-.888-3.644-3.953 0-.873.31-1.587.823-2.147-.083-.202-.358-1.015.077-2.117 0 0 .672-.215 2.2.82.638-.178 1.323-.266 2.003-.27.68.004 1.364.092 2.003.27 1.527-1.035 2.198-.82 2.198-.82.437 1.102.163 1.915.08 2.117.513.56.823 1.274.823 2.147 0 3.073-1.87 3.75-3.653 3.947.287.246.543.735.543 1.48 0 1.07-.01 1.933-.01 2.195 0 .215.144.463.55.385C13.71 14.53 16 11.534 16 8c0-4.418-3.582-8-8-8"/>
+                    </svg>
+                    <span>GitHub</span>
+                </a>
+
+                <a href="https://www.linkedin.com/in/karkum/" class="social-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                        <path d="M13.632 13.635h-2.37V9.922c0-.886-.018-2.025-1.234-2.025-1.235 0-1.424.964-1.424 1.96v3.778h-2.37V6H8.51V7.04h.03c.318-.6 1.092-1.233 2.247-1.233 2.4 0 2.845 1.58 2.845 3.637v4.188zM3.558 4.955c-.762 0-1.376-.617-1.376-1.377 0-.758.614-1.375 1.376-1.375.76 0 1.376.617 1.376 1.375 0 .76-.617 1.377-1.376 1.377zm1.188 8.68H2.37V6h2.376v7.635zM14.816 0H1.18C.528 0 0 .516 0 1.153v13.694C0 15.484.528 16 1.18 16h13.635c.652 0 1.185-.516 1.185-1.153V1.153C16 .516 15.467 0 14.815 0z" fill-rule="nonzero"/>
+                    </svg>
+                    <span>LinkedIn</span>
+                </a>
+
+                <a href="https://medium.com/@karkum" class="social-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                        <path d="M11.824 12.628l-.276.45.798.398 2.744 1.372c.15.076.294.11.418.11.278 0 .467-.177.467-.492V5.883l-4.15 6.745zm4.096-8.67c-.004-.003 0-.01-.003-.012l-4.825-2.412c-.06-.03-.123-.038-.187-.044-.016 0-.03-.01-.047-.01-.184 0-.368.092-.467.254l-.24.39-.5.814-1.89 3.08 1.89 3.076.5.813.5.812.59.95 4.71-7.64c.02-.03.01-.06-.02-.08zm-6.27 7.045L7.17 6.97l-.295-.477-.294-.477-.25-.416v4.867l3.32 1.663.5.25.5.25-.5-.813-.5-.813zM.737 1.68L.59 1.608c-.085-.042-.166-.062-.24-.062-.206 0-.35.16-.35.427v10.162c0 .272.2.594.442.716l4.145 2.08c.107.06.208.08.3.08.257 0 .438-.2.438-.53V4.01c0-.02-.012-.04-.03-.047L.738 1.68z"/>
+                    </svg>
+                    <span>Medium</span>
+                </a>
+
+                <a href="mailto:kkumar9844@gmail.com" class="social-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                        <path d="M17.388,4.751H2.613c-0.213,0-0.389,0.175-0.389,0.389v9.72c0,0.216,0.175,0.389,0.389,0.389h14.775c0.214,0,0.389-0.173,0.389-0.389v-9.72C17.776,4.926,17.602,4.751,17.388,4.751 M16.448,5.53L10,11.984L3.552,5.53H16.448zM3.002,6.081l3.921,3.925l-3.921,3.925V6.081z M3.56,14.471l3.914-3.916l2.253,2.253c0.153,0.153,0.395,0.153,0.548,0l2.253-2.253l3.913,3.916H3.56z M16.999,13.931l-3.921-3.925l3.921-3.925V13.931z" fill-rule="nonzero"/>
+                    </svg>
+                    <span>Email</span>
+                </a>
+
+                <a href="https://www.visualcv.com/karkum/" class="social-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                        <path d="M23.598 15.368c-.71-.76-2.164-1.197-4.224-1.197-1.1 0-2.375.11-3.76.37-.782-.77-1.562-1.67-2.307-2.72-.53-.74-.993-1.52-1.42-2.29.813-2.54 1.206-4.61 1.206-6.1 0-1.672-.603-3.416-2.34-3.416-.533 0-1.066.325-1.35.8-.783 1.408-.43 4.493.917 7.54-.503 1.52-1.035 2.973-1.7 4.605-.578 1.376-1.244 2.794-1.923 4.096C2.793 18.64.267 20.49.03 21.94c-.104.547.074 1.05.457 1.45.133.11.636.545 1.48.545 2.59 0 5.32-4.28 6.707-6.86 1.065-.36 2.13-.687 3.193-1.015 1.168-.323 2.34-.583 3.405-.765 2.735 2.504 5.146 2.9 6.358 2.9 1.492 0 2.024-.617 2.203-1.122.28-.65.07-1.37-.252-1.74l.02.04zm-1.385 1.054c-.104.544-.638.906-1.386.906-.21 0-.39-.037-.603-.072-1.36-.325-2.633-1.016-3.903-2.106 1.25-.214 2.31-.25 2.98-.25.74 0 1.38.032 1.81.144.49.106 1.27.435 1.095 1.38h.02zm-7.523-1.707c-.92.19-1.914.414-2.944.693-.816.223-1.666.474-2.52.77.463-.902.854-1.774 1.208-2.603.428-1.02.78-2.07 1.135-3.046.35.61.74 1.23 1.13 1.78.64.87 1.31 1.7 1.98 2.42v-.02zM10.04 1.23c.145-.29.43-.436.678-.436.745 0 .887.868.887 1.56 0 1.168-.354 2.942-.96 4.967-1.062-2.82-1.135-5.18-.603-6.09zM6.138 18.127C4.328 21.17 2.59 23.06 1.525 23.06c-.21 0-.387-.075-.53-.183-.214-.216-.32-.472-.248-.76.213-1.09 2.236-2.613 5.392-3.99z" fill-rule="nonzero"/>
+                    </svg>
+                    <span>Résumé</span>
+                </a>
+            </section>
         </div>
     </main>
 
-    <div class="mobileShow tc pt3">
-        <a class="f4 fw4 hover-silver no-underline black-70 dib dib-ns pv2 ph2" href="/speaking/">Speaking</a>
-        <a class="f4 fw4 hover-silver no-underline black-70 dib dib-ns pv2 ph2" href="/writing/">Writing</a>
-        <a class="f4 fw4 hover-silver no-underline black-70 dib dib-ns pv2 ph2" href="/projects/">Projects</a>
-        <a class="f4 fw4 hover-silver no-underline black-70 dib dib-l pv2 ph2" href="/photos/">Photography</a>
-    </div>
-
+    <script src="/assets/js/components.js"></script>
 </body>
-
 </html>

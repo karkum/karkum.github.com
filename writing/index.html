@@ -1,305 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Karthik Kumar's Writing</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css" />
-    <link rel="stylesheet" type="text/css" href="../assets/css/theme.css">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-132341198-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'UA-132341198-1');
-    </script>
-    <script>
-        window['_fs_debug'] = false;
-        window['_fs_host'] = 'fullstory.com';
-        window['_fs_org'] = 'HG6QB';
-        window['_fs_namespace'] = 'FS';
-        (function (m, n, e, t, l, o, g, y) {
-            if (e in m) { if (m.console && m.console.log) { m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].'); } return; }
-            g = m[e] = function (a, b, s) { g.q ? g.q.push([a, b, s]) : g._api(a, b, s); }; g.q = [];
-            o = n.createElement(t); o.async = 1; o.src = 'https://' + _fs_host + '/s/fs.js';
-            y = n.getElementsByTagName(t)[0]; y.parentNode.insertBefore(o, y);
-            g.identify = function (i, v, s) { g(l, { uid: i }, s); if (v) g(l, v, s) }; g.setUserVars = function (v, s) { g(l, v, s) }; g.event = function (i, v, s) { g('event', { n: i, p: v }, s) };
-            g.shutdown = function () { g("rec", !1) }; g.restart = function () { g("rec", !0) };
-            g.consent = function (a) { g("consent", !arguments.length || a) };
-            g.identifyAccount = function (i, v) { o = 'account'; v = v || {}; v.acctId = i; g(o, v) };
-            g.clearUserCookie = function () { };
-        })(window, document, window['_fs_namespace'], 'script', 'user');
-    </script>
+    <link rel="stylesheet" href="/assets/css/style.css">
 </head>
-
-<body class="bg-washed-yellow">
-    <header class="w-100 pa1 ph5-ns">
-        <nav class="dt w-100 mw8 center">
-            <div class="dtc w5 v-mid pa3">
-                <a href="/" class="hover-silver f4 dib w5 h1 no-underline black-70">Karthik Kumar</a>
-            </div>
-            <div class="dtc v-mid tr pa3">
-                <a class="f4 fw4 hover-silver no-underline black-70 dn dib-ns pv2 ph3" href="/speaking/">Speaking</a>
-                <a class="f4 fw4 hover-silver no-underline black-70 dn dib-ns pv2 ph3" href="/writing/">Writing</a>
-                <a class="f4 fw4 hover-silver no-underline black-70 dn dib-ns pv2 ph3" href="/projects/">Projects</a>
-                <a class="f4 fw4 hover-silver no-underline black-70 dn dib-l pv2 ph3" href="/photos/">Photography</a>
-                <a class="f4 fw4 hover-silver no-underline black-70 dib dib-l pv2 ph3" href="/about/">About</a>
-            </div>
-        </nav>
+<body data-page="writing">
+    <header>
+        <div class="container">
+            <nav></nav>
+        </div>
     </header>
 
-    <main class="w-100 h-100 bt b--black-40">
-        <div class="ph2 w-100 h-100 ph3 ph5-ns pv4">
-            <div class="mw8 center pa3">
-                <p class="maintext mt0">Writing</p>
-            </div>
-            <hr class="mw8">
+    <main>
+        <div class="container">
+            <section class="content-section">
+                <h1 class="section-title">Writing</h1>
+
+                <div class="item">
+                    <div class="item-header">
+                        <h2 class="item-title">
+                            <a href="https://lightstep.com/blog/how-we-built-and-scaled-log-search-and-pattern-extraction">How We Built & Scaled Log Search and Pattern Extraction</a>
+                        </h2>
+                        <span style="color: var(--color-text-light); font-size: 0.9rem;">2020</span>
+                    </div>
+                    <p class="item-description">Posted in Lightstep's Blog. Detailing how the log search and aggregation feature works.</p>
+                </div>
+
+                <div class="item">
+                    <div class="item-header">
+                        <h2 class="item-title">
+                            <a href="https://thenewstack.io/why-observability-is-crucial-for-developers/">Why Observability Is Crucial For Developers</a>
+                        </h2>
+                        <span style="color: var(--color-text-light); font-size: 0.9rem;">2020</span>
+                    </div>
+                    <p class="item-description">Posted in The New Stack as a sponsored post. Sharing examples of how observability has been invaluable for software development at Lightstep.</p>
+                </div>
+
+                <div class="item">
+                    <div class="item-header">
+                        <h2 class="item-title">
+                            <a href="https://lightstep.com/blog/introducing-snapshot-analyzer-interactive-investigations-for-deep-systems">Introducing Snapshot Analyzer: Interactive Investigations for Deep Systems</a>
+                        </h2>
+                        <span style="color: var(--color-text-light); font-size: 0.9rem;">2019</span>
+                    </div>
+                    <p class="item-description">Posted in Lightstep's Blog. A product release post about my team's new Snapshot Analyzer feature.</p>
+                </div>
+
+                <div class="item">
+                    <div class="item-header">
+                        <h2 class="item-title">
+                            <a href="https://lightstep.com/blog/signal-noise-service-diagram-actually-answers-questions/">Signal, Noise, and a Service Diagram That Actually Answers Questions</a>
+                        </h2>
+                        <span style="color: var(--color-text-light); font-size: 0.9rem;">2019</span>
+                    </div>
+                    <p class="item-description">Posted in Lightstep's Blog. A product release post about my team's new Service Diagram feature.</p>
+                </div>
+
+                <div class="item">
+                    <div class="item-header">
+                        <h2 class="item-title">
+                            <a href="https://medium.com/@karkum/why-i-joined-georgia-techs-omscs-program-fdc7bffd029b">Why I joined Georgia Tech's OMSCS program</a>
+                        </h2>
+                        <span style="color: var(--color-text-light); font-size: 0.9rem;">2019</span>
+                    </div>
+                    <p class="item-description">My journey through Computer Science education at different levels.</p>
+                </div>
+
+                <div class="item">
+                    <div class="item-header">
+                        <h2 class="item-title">
+                            <a href="https://www.rallyhealth.com/coding/migrating-from-lift-to-play">Migrating from Lift to Play</a>
+                        </h2>
+                        <span style="color: var(--color-text-light); font-size: 0.9rem;">2018</span>
+                    </div>
+                    <p class="item-description">Posted in Rally Health's Engineering Blog. How we made the transition from the Lift to Play Scala frameworks and a few lessons learned along the way.</p>
+                </div>
+
+                <div class="item">
+                    <div class="item-header">
+                        <h2 class="item-title">
+                            <a href="https://medium.com/@karkum/scala-the-good-parts-421b55884daf">Scala: The Good Parts</a>
+                        </h2>
+                        <span style="color: var(--color-text-light); font-size: 0.9rem;">2015</span>
+                    </div>
+                    <p class="item-description">A few of my favorite features in Scala after spending a few weeks experimenting with the language.</p>
+                </div>
+
+                <div class="item">
+                    <div class="item-header">
+                        <h2 class="item-title">
+                            <a href="https://medium.com/@karkum/design-patterns-in-real-life-e4295a998647">Design Patterns in Real Life</a>
+                        </h2>
+                        <span style="color: var(--color-text-light); font-size: 0.9rem;">2014</span>
+                    </div>
+                    <p class="item-description">Applying Software Design Patterns to real-world situations to help me understand it better.</p>
+                </div>
+
+                <div class="item">
+                    <div class="item-header">
+                        <h2 class="item-title">
+                            <a href="https://medium.com/@karkum/introduction-to-zookeeper-32bde59f2ffe">Introduction to ZooKeeper</a>
+                        </h2>
+                        <span style="color: var(--color-text-light); font-size: 0.9rem;">2014</span>
+                    </div>
+                    <p class="item-description">Sharing what I learned about ZooKeeper for another work project.</p>
+                </div>
+
+                <div class="item">
+                    <div class="item-header">
+                        <h2 class="item-title">
+                            <a href="https://medium.com/@karkum/using-hbase-to-store-and-analyze-nfl-play-by-play-data-f211edb84dac">Using HBase to store and analyze NFL play-by-play data</a>
+                        </h2>
+                        <span style="color: var(--color-text-light); font-size: 0.9rem;">2014</span>
+                    </div>
+                    <p class="item-description">An example of using HBase to analyze NFL play-by-play data.</p>
+                </div>
+
+                <div class="item">
+                    <div class="item-header">
+                        <h2 class="item-title">
+                            <a href="https://medium.com/@karkum/introduction-to-hbases-data-model-2249ad28c39b">Introduction to HBase's Data Model</a>
+                        </h2>
+                        <span style="color: var(--color-text-light); font-size: 0.9rem;">2014</span>
+                    </div>
+                    <p class="item-description">Documenting what I learned about HBase for a work project.</p>
+                </div>
+
+                <div class="item">
+                    <div class="item-header">
+                        <h2 class="item-title">
+                            <a href="https://medium.com/@karkum/indexing-and-searching-tweets-with-lucene-c98acd551599">Indexing and Searching Tweets with Lucene</a>
+                        </h2>
+                        <span style="color: var(--color-text-light); font-size: 0.9rem;">2013</span>
+                    </div>
+                    <p class="item-description">An example of using Lucene to index and search tweets.</p>
+                </div>
+
+                <div class="item">
+                    <div class="item-header">
+                        <h2 class="item-title">
+                            <a href="https://medium.com/@karkum/introduction-to-apache-lucene-7d65f67f5231">Introduction to Apache Lucene</a>
+                        </h2>
+                        <span style="color: var(--color-text-light); font-size: 0.9rem;">2013</span>
+                    </div>
+                    <p class="item-description">A high-level introduction to Apache Lucene's Indexing and Searching capabilities.</p>
+                </div>
+            </section>
         </div>
-        <div class="mw8 center ph2">
-            <div>
-                <div>
-                    <a class="mt0" href="https://lightstep.com/blog/how-we-built-and-scaled-log-search-and-pattern-extraction">
-                        <p class="titletext dib">How We Built & Scaled Log Search and Pattern Extraction (2020)</p>
-                    </a>
-                    <a class="link hover-silver near-black dib h2 w2 mr3 mh2 mt4" style="vertical-align: sub; float:right" href="https://thenewstack.io/why-observability-is-crucial-for-developers/">
-                        <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
-                            <path xmlns="http://www.w3.org/2000/svg" d="M14.851 11.923c-.179-.641-.521-1.246-1.025-1.749-1.562-1.562-4.095-1.563-5.657 0l-4.998 4.998c-1.562 1.563-1.563 4.095 0 5.657 1.562 1.563 4.096 1.561 5.656 0l3.842-3.841.333.009c.404 0 .802-.04 1.189-.117l-4.657 4.656c-.975.976-2.255 1.464-3.535 1.464-1.28 0-2.56-.488-3.535-1.464-1.952-1.951-1.952-5.12 0-7.071l4.998-4.998c.975-.976 2.256-1.464 3.536-1.464 1.279 0 2.56.488 3.535 1.464.493.493.861 1.063 1.105 1.672l-.787.784zm-5.703.147c.178.643.521 1.25 1.026 1.756 1.562 1.563 4.096 1.561 5.656 0l4.999-4.998c1.563-1.562 1.563-4.095 0-5.657-1.562-1.562-4.095-1.563-5.657 0l-3.841 3.841-.333-.009c-.404 0-.802.04-1.189.117l4.656-4.656c.975-.976 2.256-1.464 3.536-1.464 1.279 0 2.56.488 3.535 1.464 1.951 1.951 1.951 5.119 0 7.071l-4.999 4.998c-.975.976-2.255 1.464-3.535 1.464-1.28 0-2.56-.488-3.535-1.464-.494-.495-.863-1.067-1.107-1.678l.788-.785z"/>
-                        </svg>
-                    </a>
-                </div>
-                <p class="subtext mt0" style="text-align: left">
-                    Posted in Lightstep's Blog. Detailing how the log search and aggregation feature works. 
-                </p>
-            </div>
-
-            <hr class="mw8 mt4">
-            
-            <div>
-                <div>
-                    <a class="mt0" href="https://thenewstack.io/why-observability-is-crucial-for-developers/">
-                        <p class="titletext dib">Why Observability Is Crucial For Developers (2020)</p>
-                    </a>
-                    <a class="link hover-silver near-black dib h2 w2 mr3 mh2 mt4" style="vertical-align: sub; float:right" href="https://thenewstack.io/why-observability-is-crucial-for-developers/">
-                        <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
-                            <path xmlns="http://www.w3.org/2000/svg" d="M14.851 11.923c-.179-.641-.521-1.246-1.025-1.749-1.562-1.562-4.095-1.563-5.657 0l-4.998 4.998c-1.562 1.563-1.563 4.095 0 5.657 1.562 1.563 4.096 1.561 5.656 0l3.842-3.841.333.009c.404 0 .802-.04 1.189-.117l-4.657 4.656c-.975.976-2.255 1.464-3.535 1.464-1.28 0-2.56-.488-3.535-1.464-1.952-1.951-1.952-5.12 0-7.071l4.998-4.998c.975-.976 2.256-1.464 3.536-1.464 1.279 0 2.56.488 3.535 1.464.493.493.861 1.063 1.105 1.672l-.787.784zm-5.703.147c.178.643.521 1.25 1.026 1.756 1.562 1.563 4.096 1.561 5.656 0l4.999-4.998c1.563-1.562 1.563-4.095 0-5.657-1.562-1.562-4.095-1.563-5.657 0l-3.841 3.841-.333-.009c-.404 0-.802.04-1.189.117l4.656-4.656c.975-.976 2.256-1.464 3.536-1.464 1.279 0 2.56.488 3.535 1.464 1.951 1.951 1.951 5.119 0 7.071l-4.999 4.998c-.975.976-2.255 1.464-3.535 1.464-1.28 0-2.56-.488-3.535-1.464-.494-.495-.863-1.067-1.107-1.678l.788-.785z"/>
-                        </svg>
-                    </a>
-                </div>
-                <p class="subtext mt0" style="text-align: left">
-                    Posted in The New Stack as a sponsored post. Sharing examples of how observability has been invaluable for software development at Lightstep.
-                </p>
-            </div>
-
-            <hr class="mw8 mt4">
-
-            <div>
-                <div>
-                    <a class="mt0" href="https://lightstep.com/blog/introducing-snapshot-analyzer-interactive-investigations-for-deep-systems/">
-                        <p class="titletext dib">Introducing Snapshot Analyzer: Interactive Investigations for Deep Systems (2019)</p>
-                    </a>
-                    <a class="link hover-silver near-black dib h2 w2 mr3 mh2 mt4" style="vertical-align: sub; float:right" href="https://lightstep.com/blog/introducing-snapshot-analyzer-interactive-investigations-for-deep-systems/">
-                        <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
-                            <path xmlns="http://www.w3.org/2000/svg" d="M14.851 11.923c-.179-.641-.521-1.246-1.025-1.749-1.562-1.562-4.095-1.563-5.657 0l-4.998 4.998c-1.562 1.563-1.563 4.095 0 5.657 1.562 1.563 4.096 1.561 5.656 0l3.842-3.841.333.009c.404 0 .802-.04 1.189-.117l-4.657 4.656c-.975.976-2.255 1.464-3.535 1.464-1.28 0-2.56-.488-3.535-1.464-1.952-1.951-1.952-5.12 0-7.071l4.998-4.998c.975-.976 2.256-1.464 3.536-1.464 1.279 0 2.56.488 3.535 1.464.493.493.861 1.063 1.105 1.672l-.787.784zm-5.703.147c.178.643.521 1.25 1.026 1.756 1.562 1.563 4.096 1.561 5.656 0l4.999-4.998c1.563-1.562 1.563-4.095 0-5.657-1.562-1.562-4.095-1.563-5.657 0l-3.841 3.841-.333-.009c-.404 0-.802.04-1.189.117l4.656-4.656c.975-.976 2.256-1.464 3.536-1.464 1.279 0 2.56.488 3.535 1.464 1.951 1.951 1.951 5.119 0 7.071l-4.999 4.998c-.975.976-2.255 1.464-3.535 1.464-1.28 0-2.56-.488-3.535-1.464-.494-.495-.863-1.067-1.107-1.678l.788-.785z"/>
-                        </svg>
-                    </a>
-                </div>
-                <p class="subtext mt0" style="text-align: left">
-                    Posted in Lightstep's Blog. A product release post about my team's new Snapshot Analyzer feature.
-                </p>
-            </div>
-
-            <hr class="mw8 mt4">
-
-            <div>
-                <div>
-                    <a class="mt0" href="https://lightstep.com/blog/signal-noise-service-diagram-actually-answers-questions/">
-                        <p class="titletext dib">Signal, Noise, and a Service Diagram That Actually Answers Questions (2019)</p>
-                    </a>
-                    <a class="link hover-silver near-black dib h2 w2 mr3 mh2 mt4" style="vertical-align: sub; float:right" href="https://lightstep.com/blog/signal-noise-service-diagram-actually-answers-questions/">
-                        <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
-                            <path xmlns="http://www.w3.org/2000/svg" d="M14.851 11.923c-.179-.641-.521-1.246-1.025-1.749-1.562-1.562-4.095-1.563-5.657 0l-4.998 4.998c-1.562 1.563-1.563 4.095 0 5.657 1.562 1.563 4.096 1.561 5.656 0l3.842-3.841.333.009c.404 0 .802-.04 1.189-.117l-4.657 4.656c-.975.976-2.255 1.464-3.535 1.464-1.28 0-2.56-.488-3.535-1.464-1.952-1.951-1.952-5.12 0-7.071l4.998-4.998c.975-.976 2.256-1.464 3.536-1.464 1.279 0 2.56.488 3.535 1.464.493.493.861 1.063 1.105 1.672l-.787.784zm-5.703.147c.178.643.521 1.25 1.026 1.756 1.562 1.563 4.096 1.561 5.656 0l4.999-4.998c1.563-1.562 1.563-4.095 0-5.657-1.562-1.562-4.095-1.563-5.657 0l-3.841 3.841-.333-.009c-.404 0-.802.04-1.189.117l4.656-4.656c.975-.976 2.256-1.464 3.536-1.464 1.279 0 2.56.488 3.535 1.464 1.951 1.951 1.951 5.119 0 7.071l-4.999 4.998c-.975.976-2.255 1.464-3.535 1.464-1.28 0-2.56-.488-3.535-1.464-.494-.495-.863-1.067-1.107-1.678l.788-.785z"/>
-                        </svg>
-                    </a>
-                </div>
-                <p class="subtext mt0" style="text-align: left">
-                    Posted in Lightstep's Blog. A product release post about my team's new Service Diagram feature.
-                </p>
-            </div>
-
-            <hr class="mw8 mt4">
-
-            <div>
-                <div>
-                    <a class="mt0" href="https://medium.com/@karkum/why-i-joined-georgia-techs-omscs-program-fdc7bffd029b">
-                        <p class="titletext dib">Why I joined Georgia Tech’s OMSCS program (2019)</p>
-                    </a>
-                    <a class="link hover-silver near-black dib h2 w2 mr3 mh2 mt4" style="vertical-align: sub; float:right" href="https://medium.com/@karkum/why-i-joined-georgia-techs-omscs-program-fdc7bffd029b">
-                        <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
-                            <path d="M11.824 12.628l-.276.45.798.398 2.744 1.372c.15.076.294.11.418.11.278 0 .467-.177.467-.492V5.883l-4.15 6.745zm4.096-8.67c-.004-.003 0-.01-.003-.012l-4.825-2.412c-.06-.03-.123-.038-.187-.044-.016 0-.03-.01-.047-.01-.184 0-.368.092-.467.254l-.24.39-.5.814-1.89 3.08 1.89 3.076.5.813.5.812.59.95 4.71-7.64c.02-.03.01-.06-.02-.08zm-6.27 7.045L7.17 6.97l-.295-.477-.294-.477-.25-.416v4.867l3.32 1.663.5.25.5.25-.5-.813-.5-.813zM.737 1.68L.59 1.608c-.085-.042-.166-.062-.24-.062-.206 0-.35.16-.35.427v10.162c0 .272.2.594.442.716l4.145 2.08c.107.06.208.08.3.08.257 0 .438-.2.438-.53V4.01c0-.02-.012-.04-.03-.047L.738 1.68z" />
-                        </svg>
-                    </a>
-                </div>
-                <p class="subtext mt0" style="text-align: left">
-                    My journey through Computer Science education at different levels.
-                </p>
-            </div>
-
-            <hr class="mw8 mt4">
-
-            <div>
-                <div>
-                    <a class="mt0" href="https://www.rallyhealth.com/coding/migrating-from-lift-to-play">
-                        <p class="titletext dib">Migrating from Lift to Play (2018)</p>
-                    </a>
-                    <a class="link hover-silver near-black dib h2 w2 mr3 mh2 mt4" style="vertical-align: sub; float:right" href="https://www.rallyhealth.com/coding/migrating-from-lift-to-play">
-                        <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
-                            <path xmlns="http://www.w3.org/2000/svg" d="M14.851 11.923c-.179-.641-.521-1.246-1.025-1.749-1.562-1.562-4.095-1.563-5.657 0l-4.998 4.998c-1.562 1.563-1.563 4.095 0 5.657 1.562 1.563 4.096 1.561 5.656 0l3.842-3.841.333.009c.404 0 .802-.04 1.189-.117l-4.657 4.656c-.975.976-2.255 1.464-3.535 1.464-1.28 0-2.56-.488-3.535-1.464-1.952-1.951-1.952-5.12 0-7.071l4.998-4.998c.975-.976 2.256-1.464 3.536-1.464 1.279 0 2.56.488 3.535 1.464.493.493.861 1.063 1.105 1.672l-.787.784zm-5.703.147c.178.643.521 1.25 1.026 1.756 1.562 1.563 4.096 1.561 5.656 0l4.999-4.998c1.563-1.562 1.563-4.095 0-5.657-1.562-1.562-4.095-1.563-5.657 0l-3.841 3.841-.333-.009c-.404 0-.802.04-1.189.117l4.656-4.656c.975-.976 2.256-1.464 3.536-1.464 1.279 0 2.56.488 3.535 1.464 1.951 1.951 1.951 5.119 0 7.071l-4.999 4.998c-.975.976-2.255 1.464-3.535 1.464-1.28 0-2.56-.488-3.535-1.464-.494-.495-.863-1.067-1.107-1.678l.788-.785z"/>
-                        </svg>
-                    </a>
-                </div>
-                <p class="subtext mt0" style="text-align: left">
-                    Posted in Rally Health's Engineering Blog. How we made the transition from the Lift to Play Scala frameworks and a few lessons learned along the way.
-                </p>
-            </div>
-
-            <hr class="mw8 mt4">
-
-            <div>
-                <div>
-                    <a class="mt0" href="https://medium.com/@karkum/scala-the-good-parts-421b55884daf">
-                        <p class="titletext dib">Scala: The Good Parts (2015)</p>
-                    </a>
-                    <a class="link hover-silver near-black dib h2 w2 mr3 mh2 mt4" style="vertical-align: sub; float:right" href="https://medium.com/@karkum/scala-the-good-parts-421b55884daf">
-                        <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
-                            <path d="M11.824 12.628l-.276.45.798.398 2.744 1.372c.15.076.294.11.418.11.278 0 .467-.177.467-.492V5.883l-4.15 6.745zm4.096-8.67c-.004-.003 0-.01-.003-.012l-4.825-2.412c-.06-.03-.123-.038-.187-.044-.016 0-.03-.01-.047-.01-.184 0-.368.092-.467.254l-.24.39-.5.814-1.89 3.08 1.89 3.076.5.813.5.812.59.95 4.71-7.64c.02-.03.01-.06-.02-.08zm-6.27 7.045L7.17 6.97l-.295-.477-.294-.477-.25-.416v4.867l3.32 1.663.5.25.5.25-.5-.813-.5-.813zM.737 1.68L.59 1.608c-.085-.042-.166-.062-.24-.062-.206 0-.35.16-.35.427v10.162c0 .272.2.594.442.716l4.145 2.08c.107.06.208.08.3.08.257 0 .438-.2.438-.53V4.01c0-.02-.012-.04-.03-.047L.738 1.68z" />
-                        </svg>
-                    </a>
-                </div>
-                <p class="subtext mt0" style="text-align: left">
-                    A few of my favorite features in Scala after spending a few weeks experimenting with the language.
-                </p>
-            </div>
-
-            <hr class="mw8 mt4">
-
-            <div>
-                <div>
-                    <a class="mt0" href="https://medium.com/@karkum/design-patterns-in-real-life-e4295a998647">
-                        <p class="titletext dib">Design Patterns in Real Life (2014)</p>
-                    </a>
-                    <a class="link hover-silver near-black dib h2 w2 mr3 mh2 mt4" style="vertical-align: sub; float:right" href="https://medium.com/@karkum/design-patterns-in-real-life-e4295a998647">
-                        <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
-                            <path d="M11.824 12.628l-.276.45.798.398 2.744 1.372c.15.076.294.11.418.11.278 0 .467-.177.467-.492V5.883l-4.15 6.745zm4.096-8.67c-.004-.003 0-.01-.003-.012l-4.825-2.412c-.06-.03-.123-.038-.187-.044-.016 0-.03-.01-.047-.01-.184 0-.368.092-.467.254l-.24.39-.5.814-1.89 3.08 1.89 3.076.5.813.5.812.59.95 4.71-7.64c.02-.03.01-.06-.02-.08zm-6.27 7.045L7.17 6.97l-.295-.477-.294-.477-.25-.416v4.867l3.32 1.663.5.25.5.25-.5-.813-.5-.813zM.737 1.68L.59 1.608c-.085-.042-.166-.062-.24-.062-.206 0-.35.16-.35.427v10.162c0 .272.2.594.442.716l4.145 2.08c.107.06.208.08.3.08.257 0 .438-.2.438-.53V4.01c0-.02-.012-.04-.03-.047L.738 1.68z" />
-                        </svg>
-                    </a>
-                </div>
-                <p class="subtext mt0" style="text-align: left">
-                    Applying Software Design Patterns to real-world situations to help me understand it better.
-                </p>
-            </div>
-
-            <hr class="mw8 mt4">
-
-            <div>
-                <div>
-                    <a class="mt0" href="https://medium.com/@karkum/introduction-to-zookeeper-32bde59f2ffe">
-                        <p class="titletext dib">Introduction to ZooKeeper (2014)</p>
-                    </a>
-                    <a class="link hover-silver near-black dib h2 w2 mr3 mh2 mt4" style="vertical-align: sub; float:right" href="https://medium.com/@karkum/introduction-to-zookeeper-32bde59f2ffe">
-                        <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
-                            <path d="M11.824 12.628l-.276.45.798.398 2.744 1.372c.15.076.294.11.418.11.278 0 .467-.177.467-.492V5.883l-4.15 6.745zm4.096-8.67c-.004-.003 0-.01-.003-.012l-4.825-2.412c-.06-.03-.123-.038-.187-.044-.016 0-.03-.01-.047-.01-.184 0-.368.092-.467.254l-.24.39-.5.814-1.89 3.08 1.89 3.076.5.813.5.812.59.95 4.71-7.64c.02-.03.01-.06-.02-.08zm-6.27 7.045L7.17 6.97l-.295-.477-.294-.477-.25-.416v4.867l3.32 1.663.5.25.5.25-.5-.813-.5-.813zM.737 1.68L.59 1.608c-.085-.042-.166-.062-.24-.062-.206 0-.35.16-.35.427v10.162c0 .272.2.594.442.716l4.145 2.08c.107.06.208.08.3.08.257 0 .438-.2.438-.53V4.01c0-.02-.012-.04-.03-.047L.738 1.68z" />
-                        </svg>
-                    </a>
-                </div>
-                <p class="subtext mt0" style="text-align: left">
-                    Sharing what I learned about ZooKeeper for another work project.
-                </p>
-            </div>
-
-            <hr class="mw8 mt4">
-
-            <div>
-                <div>
-                    <a class="mt0" href="https://medium.com/@karkum/using-hbase-to-store-and-analyze-nfl-play-by-play-data-f211edb84dac">
-                        <p class="titletext dib">Using HBase to store and analyze NFL play-by-play data (2014)</p>
-                    </a>
-                    <a class="link hover-silver near-black dib h2 w2 mr3 mh2 mt4" style="vertical-align: sub; float:right" href="https://medium.com/@karkum/using-hbase-to-store-and-analyze-nfl-play-by-play-data-f211edb84dac">
-                        <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
-                            <path d="M11.824 12.628l-.276.45.798.398 2.744 1.372c.15.076.294.11.418.11.278 0 .467-.177.467-.492V5.883l-4.15 6.745zm4.096-8.67c-.004-.003 0-.01-.003-.012l-4.825-2.412c-.06-.03-.123-.038-.187-.044-.016 0-.03-.01-.047-.01-.184 0-.368.092-.467.254l-.24.39-.5.814-1.89 3.08 1.89 3.076.5.813.5.812.59.95 4.71-7.64c.02-.03.01-.06-.02-.08zm-6.27 7.045L7.17 6.97l-.295-.477-.294-.477-.25-.416v4.867l3.32 1.663.5.25.5.25-.5-.813-.5-.813zM.737 1.68L.59 1.608c-.085-.042-.166-.062-.24-.062-.206 0-.35.16-.35.427v10.162c0 .272.2.594.442.716l4.145 2.08c.107.06.208.08.3.08.257 0 .438-.2.438-.53V4.01c0-.02-.012-.04-.03-.047L.738 1.68z" />
-                        </svg>
-                    </a>
-                </div>
-                <p class="subtext mt0" style="text-align: left">
-                    An example of using HBase to analyze NFL play-by-play data.
-                </p>
-            </div>
-
-            <hr class="mw8 mt4">
-
-            <div>
-                <div>
-                    <a class="mt0" href="https://medium.com/@karkum/introduction-to-hbases-data-model-2249ad28c39b">
-                        <p class="titletext dib">Introduction to HBase’s Data Model (2014)</p>
-                    </a>
-                    <a class="link hover-silver near-black dib h2 w2 mr3 mh2 mt4" style="vertical-align: sub; float:right" href="https://medium.com/@karkum/introduction-to-hbases-data-model-2249ad28c39b">
-                        <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
-                            <path d="M11.824 12.628l-.276.45.798.398 2.744 1.372c.15.076.294.11.418.11.278 0 .467-.177.467-.492V5.883l-4.15 6.745zm4.096-8.67c-.004-.003 0-.01-.003-.012l-4.825-2.412c-.06-.03-.123-.038-.187-.044-.016 0-.03-.01-.047-.01-.184 0-.368.092-.467.254l-.24.39-.5.814-1.89 3.08 1.89 3.076.5.813.5.812.59.95 4.71-7.64c.02-.03.01-.06-.02-.08zm-6.27 7.045L7.17 6.97l-.295-.477-.294-.477-.25-.416v4.867l3.32 1.663.5.25.5.25-.5-.813-.5-.813zM.737 1.68L.59 1.608c-.085-.042-.166-.062-.24-.062-.206 0-.35.16-.35.427v10.162c0 .272.2.594.442.716l4.145 2.08c.107.06.208.08.3.08.257 0 .438-.2.438-.53V4.01c0-.02-.012-.04-.03-.047L.738 1.68z" />
-                        </svg>
-                    </a>
-                </div>
-                <p class="subtext mt0" style="text-align: left">
-                    Documenting what I learned about HBase for a work project.
-                </p>
-            </div>
-
-            <hr class="mw8 mt4">
-
-            <div>
-                <div>
-                    <a class="mt0" href="https://medium.com/@karkum/indexing-and-searching-tweets-with-lucene-c98acd551599">
-                        <p class="titletext dib">Indexing and Searching Tweets with Lucene (2013)</p>
-                    </a>
-                    <a class="link hover-silver near-black dib h2 w2 mr3 mh2 mt4" style="vertical-align: sub; float:right" href="https://medium.com/@karkum/indexing-and-searching-tweets-with-lucene-c98acd551599">
-                        <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
-                            <path d="M11.824 12.628l-.276.45.798.398 2.744 1.372c.15.076.294.11.418.11.278 0 .467-.177.467-.492V5.883l-4.15 6.745zm4.096-8.67c-.004-.003 0-.01-.003-.012l-4.825-2.412c-.06-.03-.123-.038-.187-.044-.016 0-.03-.01-.047-.01-.184 0-.368.092-.467.254l-.24.39-.5.814-1.89 3.08 1.89 3.076.5.813.5.812.59.95 4.71-7.64c.02-.03.01-.06-.02-.08zm-6.27 7.045L7.17 6.97l-.295-.477-.294-.477-.25-.416v4.867l3.32 1.663.5.25.5.25-.5-.813-.5-.813zM.737 1.68L.59 1.608c-.085-.042-.166-.062-.24-.062-.206 0-.35.16-.35.427v10.162c0 .272.2.594.442.716l4.145 2.08c.107.06.208.08.3.08.257 0 .438-.2.438-.53V4.01c0-.02-.012-.04-.03-.047L.738 1.68z" />
-                        </svg>
-                    </a>
-                </div>
-                <p class="subtext mt0" style="text-align: left">
-                    An example of using Lucene to index and search tweets.
-                </p>
-            </div>
-
-            <hr class="mw8 mt4">
-
-            <div class="mb8">
-                <div>
-                    <a class="mt0 mb2" href="https://medium.com/@karkum/introduction-to-apache-lucene-7d65f67f5231">
-                        <p class="titletext dib">Introduction to Apache Lucene (2013)</p>
-                    </a>
-                    <a class="link hover-silver near-black dib h2 w2 mr3 mh2 mt4" style="vertical-align: sub; float:right" href="https://medium.com/@karkum/introduction-to-apache-lucene-7d65f67f5231">
-                        <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
-                            <path d="M11.824 12.628l-.276.45.798.398 2.744 1.372c.15.076.294.11.418.11.278 0 .467-.177.467-.492V5.883l-4.15 6.745zm4.096-8.67c-.004-.003 0-.01-.003-.012l-4.825-2.412c-.06-.03-.123-.038-.187-.044-.016 0-.03-.01-.047-.01-.184 0-.368.092-.467.254l-.24.39-.5.814-1.89 3.08 1.89 3.076.5.813.5.812.59.95 4.71-7.64c.02-.03.01-.06-.02-.08zm-6.27 7.045L7.17 6.97l-.295-.477-.294-.477-.25-.416v4.867l3.32 1.663.5.25.5.25-.5-.813-.5-.813zM.737 1.68L.59 1.608c-.085-.042-.166-.062-.24-.062-.206 0-.35.16-.35.427v10.162c0 .272.2.594.442.716l4.145 2.08c.107.06.208.08.3.08.257 0 .438-.2.438-.53V4.01c0-.02-.012-.04-.03-.047L.738 1.68z" />
-                        </svg>
-                    </a>
-                </div>
-                    <p class="subtext mt0" style="text-align: left">
-                      A high-level introduction to Apache Lucene's Indexing and Searching capabilities.
-                    </p>
-                </div>
-            </div>
     </main>
 
-    <div class="mobileShow tc pt3">
-            <a class="f4 fw4 hover-silver no-underline black-70 dib dib-ns pv2 ph2" href="/speaking/">Speaking</a>
-            <a class="f4 fw4 hover-silver no-underline black-70 dib dib-ns pv2 ph2" href="/writing/">Writing</a>
-            <a class="f4 fw4 hover-silver no-underline black-70 dib dib-ns pv2 ph2" href="/projects/">Projects</a>
-            <a class="f4 fw4 hover-silver no-underline black-70 dib dib-l pv2 ph2" href="/photos/">Photography</a>
-    </div>
+    <script src="/assets/js/components.js"></script>
 </body>
-
 </html>

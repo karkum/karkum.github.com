@@ -1,111 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Karthik Kumar's Speaking</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css" />
-    <link rel="stylesheet" type="text/css" href="../assets/css/theme.css">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-132341198-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'UA-132341198-1');
-    </script>
-    <script>
-        window['_fs_debug'] = false;
-        window['_fs_host'] = 'fullstory.com';
-        window['_fs_org'] = 'HG6QB';
-        window['_fs_namespace'] = 'FS';
-        (function (m, n, e, t, l, o, g, y) {
-            if (e in m) { if (m.console && m.console.log) { m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].'); } return; }
-            g = m[e] = function (a, b, s) { g.q ? g.q.push([a, b, s]) : g._api(a, b, s); }; g.q = [];
-            o = n.createElement(t); o.async = 1; o.src = 'https://' + _fs_host + '/s/fs.js';
-            y = n.getElementsByTagName(t)[0]; y.parentNode.insertBefore(o, y);
-            g.identify = function (i, v, s) { g(l, { uid: i }, s); if (v) g(l, v, s) }; g.setUserVars = function (v, s) { g(l, v, s) }; g.event = function (i, v, s) { g('event', { n: i, p: v }, s) };
-            g.shutdown = function () { g("rec", !1) }; g.restart = function () { g("rec", !0) };
-            g.consent = function (a) { g("consent", !arguments.length || a) };
-            g.identifyAccount = function (i, v) { o = 'account'; v = v || {}; v.acctId = i; g(o, v) };
-            g.clearUserCookie = function () { };
-        })(window, document, window['_fs_namespace'], 'script', 'user');
-    </script>
+    <link rel="stylesheet" href="/assets/css/style.css">
 </head>
-
-<body class="bg-washed-yellow">
-    <header class="w-100 pa1 ph5-ns">
-        <nav class="dt w-100 mw8 center">
-            <div class="dtc w5 v-mid pa3">
-                <a href="/" class="hover-silver f4 dib w5 h1 no-underline black-70">Karthik Kumar</a>
-            </div>
-            <div class="dtc v-mid tr pa3">
-                <a class="f4 fw4 hover-silver no-underline black-70 dn dib-ns pv2 ph3" href="/speaking/">Speaking</a>
-                <a class="f4 fw4 hover-silver no-underline black-70 dn dib-ns pv2 ph3" href="/writing/">Writing</a>
-                <a class="f4 fw4 hover-silver no-underline black-70 dn dib-ns pv2 ph3" href="/projects/">Projects</a>
-                <a class="f4 fw4 hover-silver no-underline black-70 dn dib-l pv2 ph3" href="/photos/">Photography</a>
-                <a class="f4 fw4 hover-silver no-underline black-70 dib dib-l pv2 ph3" href="/about/">About</a>
-            </div>
-        </nav>
+<body data-page="speaking">
+    <header>
+        <div class="container">
+            <nav></nav>
+        </div>
     </header>
 
-    <main class="w-100 h-100 bt b--black-40">
-        <div class="ph2 w-100 h-100 ph3 ph5-ns pv4">
-            <div class="mw8 center pa3">
-                <p class="maintext mt0">Speaking</p>
-            </div>
-            <hr class="mw8">
-        </div>
+    <main>
+        <div class="container">
+            <section class="content-section">
+                <h1 class="section-title">Speaking</h1>
 
-        <div class="w-100 h-100 mw8 center ph2 tc-l">
-            <p class="titletext dib">Observability @ Netflix</p>
-            <p class="subtext">A co-worker and I presented at the Geekle Software Architecture Performance Summit. The talk focused on distributed tracing concepts and its applications at Netflix.</p>
-            <p>
-                <a class="link hover-silver blue" href="https://architecture.geekle.us/agenda">Geekle Software Architecture | January 26, 2021</a>
-            </p>
-        </div>
+                <div class="item">
+                    <h2 class="item-title">Observability @ Netflix</h2>
+                    <p class="item-description">A co-worker and I presented at the Geekle Software Architecture Performance Summit. The talk focused on distributed tracing concepts and its applications at Netflix.</p>
+                    <p><a href="https://architecture.geekle.us/agenda">Geekle Software Architecture | January 26, 2021</a></p>
+                </div>
 
-        <hr class="mw8">
+                <div class="item">
+                    <h2 class="item-title">Applying Statistics to Root-Cause Analysis</h2>
+                    <p class="item-description">I spoke at a (virtual) Performance Summit hosted by Facebook. The talk was about tracing data complexity and quantity and how we can apply statistics to gain more insights while minimizing the cost.</p>
+                    <p><a href="https://performancesummitiii.splashthat.com/">Performance Summit III | May 26, 2020 | Facebook (virtual)</a></p>
+                    <div class="embed-container">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/HqEIWfAARJY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
 
-        <div class="w-100 h-100 mw8 center ph2 tc-l">
-            <p class="titletext dib">Applying Statistics to Root-Cause Analysis</p>
-            <p class="subtext">I spoke at a (virtual) Performance Summit hosted by Facebook. The talk was about tracing data complexity and quantity and how we can apply statistics to gain more insights while minimizing the cost.</p>
-            <p>
-                <a class="link hover-silver blue" href="https://performancesummitiii.splashthat.com/">Performance Summit III | May 26, 2020 | Facebook (virtual)</a>
-            </p>
-            <iframe width="500" height="300" src="https://www.youtube.com/embed/HqEIWfAARJY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
+                <div class="item">
+                    <h2 class="item-title">Making Service Launches Boring with Distributed Tracing</h2>
+                    <p class="item-description">I gave a talk at the SF Site Reliability Engineering Meetup. The talk was focused on how incorporating distributed tracing when developing a service can ensure a successful launch. It also included a few tracing best-practices that LightStep uses internally.</p>
+                    <p><a href="https://www.meetup.com/San-Francisco-Reliability-Engineering/events/264010012/">SF Reliability Engineering Meetup | September 18, 2019 | Twitter HQ</a></p>
+                    <div class="embed-container">
+                        <iframe src="https://speakerdeck.com/player/c86ea46addf04740a7e016fe4ca25dba" width="560" height="315" allowfullscreen scrolling="no" allow="encrypted-media"></iframe>
+                    </div>
+                </div>
 
-        <hr class="mw8">
-        <div class="w-100 h-100 mw8 center ph2 tc-l">
-            <p class="titletext dib">Making Service Launches Boring with Distributed Tracing</p>
-            <p class="subtext">I gave a talk at the SF Site Reliability Engineering Meetup. The talk was focused on how incorporating distributed tracing when developing a service can ensure a successful launch. It also included a few best tracing best-practices that LightStep uses internally.</p>
-            <p>
-                <a class="link hover-silver blue" href="https://www.meetup.com/San-Francisco-Reliability-Engineering/events/264010012/">SF Reliability Engineering Meetup | September 18, 2019 | Twitter HQ</a>
-            </p>
-            <div class="pb3" style="left: 0; position: relative; "><iframe src="https://speakerdeck.com/player/c86ea46addf04740a7e016fe4ca25dba" style="border: 0; top: 0; left: 0; width: 500px; height: 300px; position: relative;" allowfullscreen scrolling="no" allow="encrypted-media"></iframe></div>
-        </div>
-
-        <hr class="mw8 mt4">
-        <div class="w-100 h-100 mw8 center ph2 tc-l">
-            <p class="titletext dib">Introduction to HBase</p>
-            <p class="subtext">I gave a talk on HBase at my alma mater. The audience was undergraduate and graduate Computer Science students and I gave a high-level overview of HBase.</p>
-            <p>
-                Virginia Tech ACM Alumni Tech Talk | March 5, 2014 | Virginia Tech
-            </p>
-            <div class="pb3" style="left: 0; position: relative;"><iframe src="https://speakerdeck.com/player/8a805bd4dd4649d180ebe6549740fc9d" style="border: 0; top: 0; left: 0; width: 500px; height: 300px; position: relative;" allowfullscreen scrolling="no" allow="encrypted-media"></iframe></div>
+                <div class="item">
+                    <h2 class="item-title">Introduction to HBase</h2>
+                    <p class="item-description">I gave a talk on HBase at my alma mater. The audience was undergraduate and graduate Computer Science students and I gave a high-level overview of HBase.</p>
+                    <p>Virginia Tech ACM Alumni Tech Talk | March 5, 2014 | Virginia Tech</p>
+                    <div class="embed-container">
+                        <iframe src="https://speakerdeck.com/player/8a805bd4dd4649d180ebe6549740fc9d" width="560" height="315" allowfullscreen scrolling="no" allow="encrypted-media"></iframe>
+                    </div>
+                </div>
+            </section>
         </div>
     </main>
 
-    <div class="mobileShow tc">
-            <a class="f4 fw4 hover-silver no-underline black-70 dn dib-ns pv2 ph3" href="/speaking/">Speaking</a>
-            <a class="f4 fw4 hover-silver no-underline black-70 dib dib-ns pv2 ph2" href="/writing/">Writing</a>
-            <a class="f4 fw4 hover-silver no-underline black-70 dib dib-ns pv2 ph2" href="/projects/">Projects</a>
-            <a class="f4 fw4 hover-silver no-underline black-70 dib dib-l pv2 ph2" href="/photos/">Photography</a>
-    </div>
+    <script src="/assets/js/components.js"></script>
 </body>
-
 </html>

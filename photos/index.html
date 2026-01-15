@@ -1,101 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Karthik Kumar's Photography</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css" />
-    <link rel="stylesheet" type="text/css" href="../assets/css/theme.css">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-132341198-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'UA-132341198-1');
-    </script>
-    <script>
-        window['_fs_debug'] = false;
-        window['_fs_host'] = 'fullstory.com';
-        window['_fs_org'] = 'HG6QB';
-        window['_fs_namespace'] = 'FS';
-        (function (m, n, e, t, l, o, g, y) {
-            if (e in m) { if (m.console && m.console.log) { m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].'); } return; }
-            g = m[e] = function (a, b, s) { g.q ? g.q.push([a, b, s]) : g._api(a, b, s); }; g.q = [];
-            o = n.createElement(t); o.async = 1; o.src = 'https://' + _fs_host + '/s/fs.js';
-            y = n.getElementsByTagName(t)[0]; y.parentNode.insertBefore(o, y);
-            g.identify = function (i, v, s) { g(l, { uid: i }, s); if (v) g(l, v, s) }; g.setUserVars = function (v, s) { g(l, v, s) }; g.event = function (i, v, s) { g('event', { n: i, p: v }, s) };
-            g.shutdown = function () { g("rec", !1) }; g.restart = function () { g("rec", !0) };
-            g.consent = function (a) { g("consent", !arguments.length || a) };
-            g.identifyAccount = function (i, v) { o = 'account'; v = v || {}; v.acctId = i; g(o, v) };
-            g.clearUserCookie = function () { };
-        })(window, document, window['_fs_namespace'], 'script', 'user');
-    </script>
+    <link rel="stylesheet" href="/assets/css/style.css">
 </head>
-
-<body class="bg-washed-yellow">
-    <header class="w-100 pa1 ph5-ns">
-        <nav class="dt w-100 mw8 center">
-            <div class="dtc w5 v-mid pa3">
-                <a href="/" class="hover-silver f4 dib w5 h1 no-underline black-70">Karthik Kumar</a>
-            </div>
-            <div class="dtc v-mid tr pa3">
-                <a class="f4 fw4 hover-silver no-underline black-70 dn dib-ns pv2 ph3" href="/speaking/">Speaking</a>
-                <a class="f4 fw4 hover-silver no-underline black-70 dn dib-ns pv2 ph3" href="/writing/">Writing</a>
-                <a class="f4 fw4 hover-silver no-underline black-70 dn dib-ns pv2 ph3" href="/projects/">Projects</a>
-                <a class="f4 fw4 hover-silver no-underline black-70 dn dib-l pv2 ph3" href="/photos/">Photography</a>
-                <a class="f4 fw4 hover-silver no-underline black-70 dib dib-l pv2 ph3" href="/about/">About</a>
-            </div>
-        </nav>
+<body data-page="photography">
+    <header>
+        <div class="container">
+            <nav></nav>
+        </div>
     </header>
 
-    <main class="w-100 h-100 bt b--black-40">
-        <div class="ph2 w-100 h-100 ph3 ph5-ns pv4">
-            <div class="mw8 center pa3">
-                <p class="maintext mt0">Photography</p>
-            </div>
-            <hr class="mw8 mt4 mb4">
-            <div class="mw8 center cf pa2">
-                <div class="fl w-100 w-50-ns ph2">
-                    <a href="../assets/img/positano.jpg" class="pv2 grow db no-underline black"><img class="db w-100"
-                            src="../assets/img/positano.jpg"></a>
-                    <a href="../assets/img/lucerne.jpg" class="no-underline pv2 grow db"><img class="db w-100" src="../assets/img/lucerne.jpg"></a>
-                    <a href="../assets/img/portland.jpeg" class="no-underline pv2 grow db"><img class="db w-100" src="../assets/img/portland.jpeg"></a>
-                    <a href="../assets/img/california.JPG" class="pv2 grow db no-underline black"><img class="db w-100" src="../assets/img/california.JPG"></a>
-                    <a href="../assets/img/mountcook.JPG" class="no-underline pv2 grow db"><img class="db w-100" src="../assets/img/mountcook.JPG"></a>
-                    <a href="../assets/img/haleakala.jpg" class="no-underline pv2 grow db"><img class="db w-100" src="../assets/img/haleakala.jpg" /></a>
-                    <a href="../assets/img/chicago.jpg" class="pv2 grow db no-underline black"><img class="db w-100"
-                            src="../assets/img/chicago.jpg"></a>
-                    <a href="../assets/img/maui.jpg" class="pv2 grow db no-underline black"><img class="db w-100" src="../assets/img/maui.jpg"></a>
+    <main>
+        <div class="container">
+            <section class="content-section">
+                <h1 class="section-title">Photography</h1>
+
+                <div class="photo-grid">
+                    <div class="photo-item">
+                        <img src="/assets/img/positano.jpg" alt="Positano">
+                    </div>
+                    <div class="photo-item">
+                        <img src="/assets/img/venice.jpg" alt="Venice">
+                    </div>
+                    <div class="photo-item">
+                        <img src="/assets/img/lucerne.jpg" alt="Lucerne">
+                    </div>
+                    <div class="photo-item">
+                        <img src="/assets/img/muirwoods.jpg" alt="Muir Woods">
+                    </div>
+                    <div class="photo-item">
+                        <img src="/assets/img/portland.jpeg" alt="Portland">
+                    </div>
+                    <div class="photo-item">
+                        <img src="/assets/img/hawaii.jpg" alt="Hawaii">
+                    </div>
+                    <div class="photo-item">
+                        <img src="/assets/img/california.JPG" alt="California">
+                    </div>
+                    <div class="photo-item">
+                        <img src="/assets/img/milford.jpeg" alt="Milford Sound">
+                    </div>
+                    <div class="photo-item">
+                        <img src="/assets/img/mountcook.JPG" alt="Mount Cook">
+                    </div>
+                    <div class="photo-item">
+                        <img src="/assets/img/hobbiton.jpeg" alt="Hobbiton">
+                    </div>
+                    <div class="photo-item">
+                        <img src="/assets/img/haleakala.jpg" alt="Haleakala">
+                    </div>
+                    <div class="photo-item">
+                        <img src="/assets/img/sandiego.JPG" alt="San Diego">
+                    </div>
+                    <div class="photo-item">
+                        <img src="/assets/img/chicago.jpg" alt="Chicago">
+                    </div>
+                    <div class="photo-item">
+                        <img src="/assets/img/napa.jpg" alt="Napa">
+                    </div>
+                    <div class="photo-item">
+                        <img src="/assets/img/maui.jpg" alt="Maui">
+                    </div>
+                    <div class="photo-item">
+                        <img src="/assets/img/ggbridge.JPG" alt="Golden Gate Bridge">
+                    </div>
+                    <div class="photo-item">
+                        <img src="/assets/img/alps.jpg" alt="Alps">
+                    </div>
                 </div>
-                <div class="fl w-100 w-50-ns ph2">
-                    <a href="../assets/img/venice.jpg" class="pv2 grow db no-underline black"><img class="db w-100" src="../assets/img/venice.jpg"></a>
-                    <a href="../assets/img/muirwoods.jpg" class="pv2 grow db no-underline black"><img class="db w-100"
-                            src="../assets/img/muirwoods.jpg"></a>
-                    <a href="../assets/img/hawaii.jpg" class="pv2 grow db no-underline black"><img class="db w-100" src="../assets/img/hawaii.jpg"></a>
-                    <a href="../assets/img/milford.jpeg" class="no-underline pv2 grow db"><img class="db w-100" src="../assets/img/milford.jpeg"></a>
-                    <a href="../assets/img/hobbiton.jpeg" class="no-underline pv2 grow db"><img class="db w-100" src="../assets/img/hobbiton.jpeg"></a>
-                    <a href="../assets/img/sandiego.JPG" class="pv2 grow db no-underline black"><img class="db w-100"
-                            src="../assets/img/sandiego.JPG"> </a>
-                    <a href="../assets/img/napa.jpg" class="pv2 grow db no-underline black"><img class="db w-100" src="../assets/img/napa.jpg"></a>
-                    <a href="../assets/img/ggbridge.JPG" class="pv2 grow db no-underline black"><img class="db w-100" src="../assets/img/ggbridge.JPG"></a>
-                    <a href="../assets/img/alps.jpg" class="pv2 grow db no-underline black"><img class="db w-100" src="../assets/img/alps.jpg">
-                    </a>
-                </div>
-    </main>
-    </div>
-    </div>
+            </section>
+        </div>
     </main>
 
-    <div class="mobileShow tc">
-            <a class="f4 fw4 hover-silver no-underline black-70 dib dib-ns pv2 ph2" href="/speaking/">Speaking</a>
-            <a class="f4 fw4 hover-silver no-underline black-70 dib dib-ns pv2 ph2" href="/writing/">Writing</a>
-            <a class="f4 fw4 hover-silver no-underline black-70 dib dib-ns pv2 ph2" href="/projects/">Projects</a>
-            <a class="f4 fw4 hover-silver no-underline black-70 dib dib-l pv2 ph2" href="/photos/">Photography</a>
-    </div>
+    <script src="/assets/js/components.js"></script>
+    <script src="/assets/js/lightbox.js"></script>
 </body>
-
 </html>
