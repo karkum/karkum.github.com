@@ -162,6 +162,12 @@ main {
     border-bottom: 1px solid var(--color-border);
 }
 
+.section-divider {
+    border: none;
+    border-top: 1px solid var(--color-border);
+    margin: var(--spacing-xl) 0;
+}
+
 /* Article/Item Cards */
 .item {
     margin-bottom: var(--spacing-lg);
